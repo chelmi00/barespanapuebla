@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Café · Bar España</title>
+
+    <link href="img/escudo.png" rel="icon" style="object-fit: scale-down;">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="baresp.css">
+
+    <script src="baresp.js"></script>
+</head>
+
+<body data-spy="scroll">
+
+<nav class="navbar">
+    <a onclick="refresh()" href="">CAFE · BAR ESPAÑA</a>
+</nav>
+
+<img src="img/bar.jpg" id="inicio" style="object-fit: scale-down;">
+
+<div class="container" id="sup">
+    <div class="row">
+        <div class="col-md-5" onclick="carta()" href="">
+            <p>Carta y Takeaway</p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5" onclick="sugerencias()" href="">
+            <p>Sugerencias</p>
+        </div>
+    </div>
+</div>
+
+<nav id="mapa">
+    <picture>
+        <source srcset="img/noche.png" media="(prefers-color-scheme: dark)"/>
+        <source srcset="img/dia.png" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"/>
+        <img src="img/dia.png">
+    </picture>
+    <a title="Abrir en Google Maps" href="https://www.google.es/maps/place/Caf%C3%A9-Bar+Espa%C3%B1a/@42.051764,-6.6334581,20.05z/data=!4m5!3m4!1s0xd3a1625099608c1:0x6cc8bb5e3a6df825!8m2!3d42.0516234!4d-6.6335166" target="_blank">
+        <img src="img/ampliar.png" id="amp">
+    </a>
+</nav>
+<footer class="container">
+    <div class="row">
+        <div id="nosotros" class="col-xs-12 col-md-5">
+            <div class="row">
+                <p>Síguenos:</p>
+            </div>
+            <div class="row">
+                <div class="main center">
+                    <div class="box">
+                        <a class="icon-box center" href="https://www.instagram.com/barespanapuebla/" target="_blank">
+                            <i class="fab fa-instagram fa-3x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/barespanapuebla/" target="_blank">
+                            <div class="inner-box center"><p>Instagram</p></div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a class="icon-box center ib-f" href="https://www.facebook.com/pages/category/Bar/Cafe-Bar-Espa%C3%B1a-Puebla-809729442528464/" target="_blank">
+                            <i class="fab fa-facebook fa-3x"></i>
+                        </a>
+                        <a href="https://www.facebook.com/pages/category/Bar/Cafe-Bar-Espa%C3%B1a-Puebla-809729442528464/" target="_blank">
+                            <div class="inner-box center"><p>Facebook</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="javascript:void(0)" onclick="conocenos()"><p>Conócenos</p></a>
+            </div>
+        </div>
+        <div class="col-xs-0 col-md-2"></div>
+        <div id="datos" class="col-xs-12 col-md-5">
+            <p class="info">
+                Dirección:
+            </p>
+            <p>
+                C/Arrabal, 33, 49300 - Puebla de Sanabria
+            </p>
+            <p class="info">
+                Teléfono:
+            </p>
+            <p>
+                980620554
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
