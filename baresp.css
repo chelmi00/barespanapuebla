@@ -2,7 +2,7 @@
     font-family: "Cooper Black";
     src: url("baresp.woff");
 }
-
+/*
 :root{
     --principal: #a9483f;
     --fondo: #efe2ba;
@@ -34,7 +34,7 @@
         --negro: #000000;
         --blanco: #ffffff;
     }
-}
+}*/
 
 body{
     background-color: var(--fondo);
@@ -44,11 +44,13 @@ body{
 .navbar {
     background-color: var(--principal);
     text-align: center;
+    display: block;
 }
 .navbar a{
     font-family: "Cooper Black", serif;
     font-size: 30px;
     color: var(--nhf);
+    text-decoration: none;
 }
 .navbar a:hover{
     color: var(--principal);
@@ -57,6 +59,7 @@ body{
 #inicio {
     height: 30em;
     margin-bottom: 3%;
+    object-fit: scale-down;
 }
 #carta {
     height: 30em;
@@ -200,11 +203,43 @@ textarea, input{
     cursor: pointer;
 }
 
+#cuerpo_conocenos{
+    margin: 30px 80px;
+    color: var(--bw);
+}
+#cuerpo_conocenos p{
+    visibility: hidden;
+}
+
+#tapas{
+    float: left;
+    height: 20rem;
+    width: auto;
+    filter: blur(1px);
+}
+#tapitas{
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    height: 20rem;
+    width: auto;
+    visibility: hidden;
+}
+#tapas:hover{
+    filter: blur(0);
+    filter: brightness(2.5);
+}
+#tapas:hover ~ p, #tapas:hover ~ img{
+    visibility: visible;
+}
+
 footer{
     background-color: var(--principal);
     color: var(--nhf);
-    margin: 15px;
+    margin: 15px 80px;
     z-index: -2;
+    padding: 0 !important;
 }
 
 .info{
