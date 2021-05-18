@@ -84,3 +84,8 @@ function tamaño(){
     let h = window.screen.height;
     let w = window.screen.width;
 }
+
+
+$(function(){
+    $("#includedContent").load("carousel.html"); 
+});

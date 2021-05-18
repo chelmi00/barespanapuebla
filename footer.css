@@ -7,11 +7,11 @@
     }
 }
 @media(prefers-color-scheme: dark) {
-    :root {
-        --fondo-footer: #111111;
-        --letra: #e5e5e5;
-        --conocenos: #ffca18;
-        --hover-footer: #d42a2a;
+    :root{
+        --fondo-footer: #eeeeee;
+        --letra: #1a1a1a;
+        --conocenos: #bf9200;
+        --hover-footer: #28baff;
     }
 }
 
