@@ -79,3 +79,22 @@ function enviar() {
         }
     }
 }
+
+function modifyHeight(){
+    if (sessionStorage.getItem("a") === 'ok') {
+        sessionStorage.setItem("a", 'notok');
+        return;
+    }
+    var iframe = document.getElementById("iframe");
+    var elem = iframe.contentWindow.document.getElementById("body-carousel");
+    let height = "height: " + elem.offsetHeight +"px;";
+    var width = window.innerWidth;
+    if (width < 576){
+        document.getElementById("carousel-comida").setAttribute("style", height);
+    }
+    sessionStorage.setItem("a", 'ok');
+    window.location.reload();
+}
+
+window.onresize = modifyHeight;
+window.onload = modifyHeight;
