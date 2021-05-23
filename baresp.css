@@ -67,9 +67,14 @@ html, body {
     height: 100%;
 }
 
+.iframe {
+    position: relative;
+}
+
 #mapa {
     margin-top: 3%;
     position: relative;
+    padding: 0;
 }
 #mapa a {
     margin: 10px;
@@ -85,4 +90,30 @@ html, body {
     width: 100%;
     top: 0;
     left: 0;
+}
+
+
+
+.carousel-comida {
+    position: relative;
+}
+@media (min-width: 576px) {
+    .carousel-comida {
+        height: 409px;
+    }
+}
+@media (min-width: 768px) {
+    .carousel-comida {
+        height: 210px;
+    }
+}
+@media (min-width: 992) {
+    .carousel-comida {
+        height: 190px;
+    }
+}
+@media (min-width: 1200px) {
+    .carousel-comida {
+        height: 195px;
+    }
 }

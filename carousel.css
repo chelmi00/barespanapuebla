@@ -5,19 +5,7 @@
     border: 0;
 }
 
-@media (max-width: 991px) {
-    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-          position: absolute;
-          top: 0;
-          right: -33.3333%;
-          z-index: -1;
-          display: block;
-          visibility: visible;
-      }
-  }
-  
-  
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
           position: absolute;
           top: 0;
@@ -108,7 +96,7 @@
   }
   
   
-  @media (min-width: 991px) {
+  @media (min-width: 992px) {
   
       .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
           display: block;

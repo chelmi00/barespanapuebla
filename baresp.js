@@ -1,4 +1,4 @@
-function inicio(){
+function inicio() {
 
     let act = window.location.href;
     let a = document.referrer;
@@ -19,19 +19,19 @@ function inicio(){
     }
 }
 
-function carta(){
+function carta() {
     aIndex();
     subir();
     window.location="carta.html";
 }
 
-function sugerencias(){
+function sugerencias() {
     aIndex();
     subir();
     window.location="sugerencias.php";
 }
 
-function conocenos(){
+function conocenos() {
     let act = window.location.href;
     let a = document.referrer;
     if (!(act.includes("sugerencias.php") || act.includes("carta.html")))
@@ -46,18 +46,18 @@ function conocenos(){
     window.location="conocenos.html";
 }
 
-function refresh(){
+function refresh() {
     let act = window.location.href;
     if (act.includes("index.php") || act.includes("conocenos.html"))
         window.location.reload();
     else
         window.location.replace("index.php");
 }
-function subir(){
+function subir() {
     window.scrollTo(0, 0);
 }
 
-function aIndex(){
+function aIndex() {
     let act = window.location.href;
     if (act.includes("index.php"))
         return;
@@ -65,7 +65,7 @@ function aIndex(){
         history.replaceState(null, "", act + "index.php");
 }
 
-function enviar(){
+function enviar() {
     const modal = document.getElementById("popup");
     const span = document.getElementsByClassName("cerrar")[0];
     modal.style.display = "block";
@@ -79,13 +79,3 @@ function enviar(){
         }
     }
 }
-
-function tamaño(){
-    let h = window.screen.height;
-    let w = window.screen.width;
-}
-
-
-$(function(){
-    $("#includedContent").load("carousel.html"); 
-});

@@ -16,6 +16,7 @@
     <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://getbootstrap.com/docs/5.0/examples/starter-template/starter-template.css" rel="stylesheet" />
     <link href="baresp.css" rel="stylesheet" />
+    <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -107,7 +108,7 @@
         </button>
       </div>
 
-      <nav id="mapa"  class="container">
+      <nav id="mapa" class="container">
         <img src="img/dia.png" class="mapa dia" />
         <img src="img/noche.png" class="mapa noche" />
         <a
@@ -119,7 +120,9 @@
         </a>
       </nav>
 
-        <iframe src="carousel.html" width="100%"></iframe>
+      <div class="container carousel-comida">
+        <iframe src="carousel.html" style="width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;"></iframe>
+      </div>
     </main>
     
     <footer class="container">
