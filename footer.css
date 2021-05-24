@@ -4,6 +4,7 @@
         --letra: #1a1a1a;
         --conocenos: #bf9200;
         --hover-footer: #28baff;
+        --footer-background: #ffffff
     }
 }
 @media(prefers-color-scheme: dark) {
@@ -12,12 +13,17 @@
         --letra: #1a1a1a;
         --conocenos: #bf9200;
         --hover-footer: #28baff;
+        --footer-background: #ffffff;
     }
 }
 
-footer{
+footer {
+    padding: 25px 0;
+    background-color: var(--footer-background);
+}
+#footer{
     background-color: var(--fondo-footer);
-    margin: 25px 0;
+    margin: 0 auto;
     z-index: -2;
     padding: 0 !important;
 }

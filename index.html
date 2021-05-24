@@ -108,81 +108,85 @@
         </button>
       </div>
 
-      <nav id="mapa" class="container">
-        <img src="img/dia.png" class="mapa dia" />
-        <img src="img/noche.png" class="mapa noche" />
-        <a
-          title="Abrir en Google Maps"
-          href="https://www.google.es/maps/place/Caf%C3%A9-Bar+Espa%C3%B1a/@42.051764,-6.6334581,20.05z/data=!4m5!3m4!1s0xd3a1625099608c1:0x6cc8bb5e3a6df825!8m2!3d42.0516234!4d-6.6335166"
-          target="_blank"
-        >
-          <img src="img/ampliar.png" />
-        </a>
-      </nav>
+      <div id="mapa-container">
+        <nav id="mapa" class="container">
+          <img src="img/dia.png" class="mapa dia" />
+          <img src="img/noche.png" class="mapa noche" />
+          <a
+            title="Abrir en Google Maps"
+            href="https://www.google.es/maps/place/Caf%C3%A9-Bar+Espa%C3%B1a/@42.051764,-6.6334581,20.05z/data=!4m5!3m4!1s0xd3a1625099608c1:0x6cc8bb5e3a6df825!8m2!3d42.0516234!4d-6.6335166"
+            target="_blank"
+          >
+            <img src="img/ampliar.png" />
+          </a>
+        </nav>
+      </div>
 
       <div class="container carousel-comida" id="carousel-comida">
-        <iframe src="carousel.html" id="iframe"></iframe>
+        <iframe src="carousel.html" id="iframe" class="carousel-iframe"></iframe>
       </div>
     </main>
     
-    <footer class="container">
-      <div class="row py-2">
-        <div id="nosotros" class="col-xs-12 col-md-5">
-          <div class="row">
-            <p class="nosotros static">Síguenos:</p>
-          </div>
-          <div class="row">
-            <div class="main center">
-              <div class="box">
-                <a
-                  class="icon-box center"
-                  href="https://www.instagram.com/barespanapuebla/"
-                  target="_blank"
-                ></a>
-                <a
-                  href="https://www.instagram.com/barespanapuebla/"
-                  target="_blank"
-                >
-                  <div class="inner-box center">
-                    <p class="caja">Instagram</p>
-                  </div>
-                </a>
-              </div>
-              <div class="box">
-                <a
-                  class="icon-box center ib-f"
-                  href="https://www.facebook.com/pages/category/BarCafe-Bar-Espa%C3%B1a-Puebla-809729442528464/"
-                  target="_blank"
-                ></a>
-                <a
-                  href="https://www.facebook.com/pages/category/BarCafe-Bar-Espa%C3%B1a-Puebla-809729442528464/"
-                  target="_blank"
-                >
-                  <div class="inner-box center">
-                    <p class="caja">Facebook</p>
-                  </div>
-                </a>
+    <footer>
+      <div id="footer" class="container">
+        <div class="row py-2">
+          <div id="nosotros" class="col-xs-12 col-md-5">
+            <div class="row">
+              <p class="nosotros static">Síguenos:</p>
+            </div>
+            <div class="row">
+              <div class="main center">
+                <div class="box">
+                  <a
+                    class="icon-box center"
+                    href="https://www.instagram.com/barespanapuebla/"
+                    target="_blank"
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/barespanapuebla/"
+                    target="_blank"
+                  >
+                    <div class="inner-box center">
+                      <p class="caja">Instagram</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="box">
+                  <a
+                    class="icon-box center ib-f"
+                    href="https://www.facebook.com/pages/category/BarCafe-Bar-Espa%C3%B1a-Puebla-809729442528464/"
+                    target="_blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/pages/category/BarCafe-Bar-Espa%C3%B1a-Puebla-809729442528464/"
+                    target="_blank"
+                  >
+                    <div class="inner-box center">
+                      <p class="caja">Facebook</p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
+            <div class="row">
+              <a
+                class="nosotros"
+                href="javascript:void(0)"
+                onclick="conocenos()"
+              >
+                <p class="nosotros">Conócenos</p>
+              </a>
+            </div>
           </div>
-          <div class="row">
-            <a
-              class="nosotros"
-              href="javascript:void(0)"
-              onclick="conocenos()"
-            >
-              <p class="nosotros">Conócenos</p>
-            </a>
+          <div class="col-xs-0 col-md-2"></div>
+          <div id="datos" class="col-xs-12 col-md-5">
+            <p class="info static">Dirección:</p>
+            <p class="valor static">
+              C/Arrabal, 33, 49300 - Puebla de Sanabria
+            </p>
+            <p class="info static">Teléfono:</p>
+            <p class="valor static">980620554</p>
           </div>
-        </div>
-        <div class="col-xs-0 col-md-2"></div>
-        <div id="datos" class="col-xs-12 col-md-5">
-          <p class="info static">Dirección:</p>
-          <p class="valor static">
-            C/Arrabal, 33, 49300 - Puebla de Sanabria
-          </p>
-          <p class="info static">Teléfono:</p>
-          <p class="valor static">980620554</p>
         </div>
       </div>
     </footer>

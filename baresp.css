@@ -6,6 +6,7 @@
         --fondo-body: #87ceeb80;
         --boton-hover: #eeeeee;
         --fondo-body-1: #637883;
+        --mapa-container: #4682b4;
     }
     .noche { opacity: 0; }
     .dia { opacity: 100%; }
@@ -22,6 +23,7 @@
         --fondo-body: #87ceeb80;
         --boton-hover: #eeeeee;
         --fondo-body-1: #637883;
+        --mapa-container: #4682b4;
     }
     .noche { opacity: 0; }
     .dia { opacity: 100%; }
@@ -50,60 +52,11 @@
     top: 50%;
 }
 
-.dia {
-    position: relative !important;
-}
-html, body {
-    padding-top: 3rem;
-    background-color: var(--fondo-body);
-    width: 100%;
-    overflow-x: hidden;
-}
-
-.img-logo, .mapa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-
-.iframe {
-    position: relative;
-}
-
-#mapa {
-    margin-top: 3%;
-    position: relative;
-    padding: 0;
-}
-#mapa a {
-    margin: 10px;
-    position: absolute;
-    cursor: pointer;
-    border-radius: 4px;
-    height: 40px;
-    width: 40px;
-    overflow: hidden;
-    right: 0;
-}
-#mapa img {
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-
-iframe {
-    width: 100%;
-    height: inherit;
-    overflow: hidden;
-}
-
 .carousel-comida {
     position: relative;
     width: 100%;
-    padding: 0;
     height: 450px;
+    margin: 25px auto;
 }
 @media (min-width: 576px) {
     .carousel-comida {
@@ -131,4 +84,56 @@ iframe {
     }
 }
 
+.carousel-iframe {
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+}
 
+.dia {
+    position: relative !important;
+}
+html, body {
+    padding-top: 56px;
+    position: absolute;
+    top: 0;
+    background-color: var(--fondo-body);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.iframe {
+    position: relative;
+}
+
+.img-logo, .mapa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#mapa-container {
+    padding: 25px 0;
+    background-color: var(--mapa-container);
+}
+#mapa {
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+#mapa a {
+    margin: 10px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    right: 0;
+}
+#mapa img {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
