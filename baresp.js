@@ -85,11 +85,10 @@ function modifyHeight(){
         sessionStorage.setItem("a", 'notok');
         return;
     }
-    var iframe = document.getElementById("iframe");
-    var elem = iframe.contentWindow.document.getElementById("body-carousel");
-    let height = "height: " + elem.offsetHeight +"px;";
     var width = window.innerWidth;
     if (width < 576){
+        var elem = document.getElementById("iframe").contentWindow.document.getElementById("body-carousel");
+        let height = "height: " + elem.offsetHeight +"px;";
         document.getElementById("carousel-comida").setAttribute("style", height);
     }
     sessionStorage.setItem("a", 'ok');
