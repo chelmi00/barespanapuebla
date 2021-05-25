@@ -4,18 +4,18 @@ function inicio() {
     let a = document.referrer;
     let n = sessionStorage.getItem("n");
     if (act.includes("sugerencias.php") || act.includes("carta.html")){
-        if (a.includes("index.php"))
+        if (a.includes("index.html"))
             window.history.go(-1);
         else
-            window.location.replace("index.php");
+            window.location.replace("index.html");
     }
     else if (act.includes("conocenos.html")){
-        if (a.includes("index.php") || n === "error")
+        if (a.includes("index.html") || n === "error")
             window.history.go(-1);
         else if (n === "ok")
             window.history.go(-2);
         else
-            window.location.replace("index.php");
+            window.location.replace("index.html");
     }
 }
 
@@ -36,11 +36,11 @@ function conocenos() {
     let a = document.referrer;
     if (!(act.includes("sugerencias.php") || act.includes("carta.html")))
         aIndex();
-    if ((act.includes("sugerencias.php") || act.includes("carta.html")) && !a.includes("index.php")){
+    if ((act.includes("sugerencias.php") || act.includes("carta.html")) && !a.includes("index.html")){
         sessionStorage.setItem("n", 'error');
-        history.replaceState(null, "", "index.php");
+        history.replaceState(null, "", "index.html");
     }
-    if ((act.includes("sugerencias.php") || act.includes("carta.html")) && a.includes("index.php"))
+    if ((act.includes("sugerencias.php") || act.includes("carta.html")) && a.includes("index.html"))
         sessionStorage.setItem("n", 'ok');
     subir();
     window.location="conocenos.html";
@@ -48,10 +48,10 @@ function conocenos() {
 
 function refresh() {
     let act = window.location.href;
-    if (act.includes("index.php") || act.includes("conocenos.html"))
+    if (act.includes("index.html") || act.includes("conocenos.html"))
         window.location.reload();
     else
-        window.location.replace("index.php");
+        window.location.replace("index.html");
 }
 function subir() {
     window.scrollTo(0, 0);
@@ -59,10 +59,10 @@ function subir() {
 
 function aIndex() {
     let act = window.location.href;
-    if (act.includes("index.php"))
+    if (act.includes("index.html"))
         return;
     else
-        history.replaceState(null, "", act + "index.php");
+        history.replaceState(null, "", act + "index.html");
 }
 
 function enviar() {

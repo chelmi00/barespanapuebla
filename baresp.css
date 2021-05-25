@@ -35,20 +35,37 @@
 
 .carousel {
     background-color: var(--fondo-body-1);
-    padding: 25px 0;
+    padding: 30px 0 25px;
 }
 .carousel-inner {
     z-index: 1 !important;
     position: relative;
+    padding: 0;
 }
 .carousel-item, .inicio {
-    height: 30em;
     object-fit: scale-down;
 }
 .carousel-control-prev, .carousel-control-next {
     height: 0;
     position: absolute;
     top: 50%;
+}
+.carousel-caption {
+    position: absolute;
+    right: 10%;
+    bottom: 0.75rem;
+    left: 30%;
+    padding: 0.75rem 0;
+    color: #ffffff;
+    text-align: center;
+}
+.carousel-item span {
+    background-color: #000000;
+}
+@media (min-width: 1200px) {
+    .carousel-item p {
+        font-size: 150%;
+    }
 }
 
 .carousel-comida {
