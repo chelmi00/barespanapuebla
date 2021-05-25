@@ -94,6 +94,5 @@ function modifyHeight(){
     sessionStorage.setItem("a", 'ok');
     window.location.reload();
 }
-
 window.onresize = modifyHeight;
 window.onload = modifyHeight;
