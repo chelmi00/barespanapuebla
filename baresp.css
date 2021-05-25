@@ -35,7 +35,7 @@
 
 .carousel {
     background-color: var(--fondo-body-1);
-    padding-top: 20px;
+    padding: 25px 0;
 }
 .carousel-inner {
     z-index: 1 !important;
@@ -43,7 +43,6 @@
 }
 .carousel-item, .inicio {
     height: 30em;
-    margin-bottom: 3%;
     object-fit: scale-down;
 }
 .carousel-control-prev, .carousel-control-next {
