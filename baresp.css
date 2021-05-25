@@ -2,11 +2,16 @@
     :root{
         --byn: #ffffff;
         --nyb: #000000;
-        --hover: #ffca18b5;
-        --fondo-body: #87ceeb80;
-        --boton-hover: #eeeeee;
-        --fondo-body-1: #637883;
-        --mapa-container: #4682b4;
+        /*--hover: #000000;*/
+        --ul-navbar-hover: #000000;
+        /*--fondo-body: #87ceeb80;*/
+        --fondo-carousel-comida: #87ceeb80;
+        /*--boton-hover: #eeeeee;*/
+        --boton-navbar-hover: #eeeeee;
+        /*--fondo-body-1: #325b70;*/
+        --fondo-carousel-header: #325b70;
+        /*--mapa-container: #4682b4;*/
+        --fondo-mapa: #4682b4;
     }
     .noche { opacity: 0; }
     .dia { opacity: 100%; }
@@ -17,24 +22,29 @@
 }
 @media(prefers-color-scheme: dark) {
     :root{
-        --byn: #ffffff;
-        --nyb: #000000;
-        --hover: #ffca18b5;
-        --fondo-body: #87ceeb80;
-        --boton-hover: #eeeeee;
-        --fondo-body-1: #637883;
-        --mapa-container: #4682b4;
+        --byn: #000000;
+        --nyb: #ffffff;
+        /*--hover: #ffca18b5;*/
+        --ul-navbar-hover: #ffca18b5;
+        /*--fondo-body: #87ceeb80;*/
+        --fondo-carousel-comida: #1c1c1c;
+        /*--boton-hover: #eeeeee;*/
+        --boton-navbar-hover: #111111;
+        /*--fondo-body-1: #637883;*/
+        --fondo-carousel-header: #637883;
+        /*--mapa-container: #4682b4;*/
+        --fondo-mapa: #4682b4;
     }
-    .noche { opacity: 0; }
-    .dia { opacity: 100%; }
-    .home :hover .dia { opacity: 0; }
-    .home :hover .noche { opacity: 100%; }
+    .noche { opacity: 100%; }
+    .dia { opacity: 0; }
+    .home :hover .dia { opacity: 100%; }
+    .home :hover .noche { opacity: 0; }
 
-    .navbar-toggler-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;}
+    .navbar-toggler-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;}
 }
 
 .carousel {
-    background-color: var(--fondo-body-1);
+    background-color: var(--fondo-carousel-header);
     padding: 30px 0 25px;
 }
 .carousel-inner {
@@ -56,11 +66,11 @@
     bottom: 0.75rem;
     left: 30%;
     padding: 0.75rem 0;
-    color: #ffffff;
+    color: var(--byn);
     text-align: center;
 }
 .carousel-item span {
-    background-color: #000000;
+    background-color: var(--nyb);
 }
 @media (min-width: 1200px) {
     .carousel-item p {
@@ -113,7 +123,7 @@ html, body {
     padding-top: 56px;
     position: absolute;
     top: 0;
-    background-color: var(--fondo-body);
+    background-color: var(--fondo-carousel-comida);
     width: 100%;
     overflow-x: hidden;
 }
@@ -131,7 +141,7 @@ html, body {
 
 #mapa-container {
     padding: 25px 0;
-    background-color: var(--mapa-container);
+    background-color: var(--fondo-mapa);
 }
 #mapa {
     margin: 0 auto;

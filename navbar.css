@@ -11,7 +11,7 @@
     position: relative;
 }
 .nav-boton :hover {
-    background-color: var(--boton-hover) !important;
+    background-color: var(--boton-navbar-hover) !important;
 }
 .navbar-toggler {
     color: transparent !important;
@@ -28,7 +28,7 @@
 }
 .nav-item {
     border-bottom: 2px var(--byn) solid;
-    background-color: var(--fondo-body);
+    background-color: var(--fondo-carousel-comida);
 }
 @media (min-width: 768px){
     .backcol-md-byn {
@@ -37,7 +37,7 @@
 }
 .nav-item :hover {
     color: var(--byn) !important;
-    background-color: var(--hover);
+    background-color: var(--ul-navbar-hover);
 }
 .nav-lat {
     clear: both;

@@ -69,31 +69,55 @@
 
     <main>
       <div
-        id="carouselExampleIndicators"
+        id="carousel-header"
         class="carousel slide"
         data-bs-ride="carousel"
       >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+          <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+        </div>
         <div class="carousel-inner container">
           <div class="carousel-item active">
-            <img src="platos/plato1.jpg" class="d-block w-100 inicio" />
+            <img src="header/inicio.jpg" class="d-block w-100 inicio" />
           </div>
           <div class="carousel-item">
-            <img src="platos/plato2.jpg" class="d-block w-100 inicio" />
+            <img src="header/carta.jpg" class="d-block w-100 inicio" />
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1></h1>
+                <p><span>¿Se atreve su paladar a experimentar nuevas sensaciones?</span></p>
+                <p><a class="btn btn-lg btn-primary" href="carta.html">Carta</a></p>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="platos/plato3.jpg" class="d-block w-100 inicio" />
+            <img src="header/sugerencias.jpg" class="d-block w-100 inicio" />
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1></h1>
+                <p><span>¿Cree que podemos mejorar en algo?</span></p>
+                <p><a class="btn btn-lg btn-primary" href="sugerencias.php">Sugerencias</a></p>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="platos/plato4.jpg" class="d-block w-100 inicio" />
-          </div>
-          <div class="carousel-item">
-            <img src="platos/plato5.jpg" class="d-block w-100 inicio" />
+            <img src="header/conocenos.jpg" class="d-block w-100 inicio" />
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1></h1>
+                <p><span>¿Quiere saber un poquito sobre nosotros?</span></p>
+                <p><a class="btn btn-lg btn-primary" href="conocenos.html">Conocenos</a></p>
+              </div>
+            </div>
           </div>
         </div>
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carousel-header"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -101,86 +125,92 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carousel-header"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
 
-      <nav id="mapa"  class="container">
-        <img src="img/dia.png" class="mapa dia" />
-        <img src="img/noche.png" class="mapa noche" />
-        <a
-          title="Abrir en Google Maps"
-          href="https://www.google.es/maps/place/Caf%C3%A9-Bar+Espa%C3%B1a/@42.051764,-6.6334581,20.05z/data=!4m5!3m4!1s0xd3a1625099608c1:0x6cc8bb5e3a6df825!8m2!3d42.0516234!4d-6.6335166"
-          target="_blank"
-        >
-          <img src="img/ampliar.png" />
-        </a>
-      </nav>
+      <div id="mapa-container">
+        <nav id="mapa" class="container">
+          <img src="img/dia.png" class="mapa dia" />
+          <img src="img/noche.png" class="mapa noche" />
+          <a
+            title="Abrir en Google Maps"
+            href="https://www.google.es/maps/place/Caf%C3%A9-Bar+Espa%C3%B1a/@42.051764,-6.6334581,20.05z/data=!4m5!3m4!1s0xd3a1625099608c1:0x6cc8bb5e3a6df825!8m2!3d42.0516234!4d-6.6335166"
+            target="_blank"
+          >
+            <img src="img/ampliar.png" />
+          </a>
+        </nav>
+      </div>
 
-
+      <div class="container carousel-comida" id="carousel-comida">
+        <iframe src="carousel.html" id="iframe" class="carousel-iframe"></iframe>
+      </div>
     </main>
     
-    <footer class="container">
-      <div class="row py-2">
-        <div id="nosotros" class="col-xs-12 col-md-5">
-          <div class="row">
-            <p class="nosotros static">Síguenos:</p>
-          </div>
-          <div class="row">
-            <div class="main center">
-              <div class="box">
-                <a
-                  class="icon-box center"
-                  href="https://www.instagram.com/barespanapuebla/"
-                  target="_blank"
-                ></a>
-                <a
-                  href="https://www.instagram.com/barespanapuebla/"
-                  target="_blank"
-                >
-                  <div class="inner-box center">
-                    <p class="caja">Instagram</p>
-                  </div>
-                </a>
-              </div>
-              <div class="box">
-                <a
-                  class="icon-box center ib-f"
-                  href="https://www.facebook.com/pages/category/BarCafe-Bar-Espa%C3%B1a-Puebla-809729442528464/"
-                  target="_blank"
-                ></a>
-                <a
-                  href="https://www.facebook.com/pages/category/BarCafe-Bar-Espa%C3%B1a-Puebla-809729442528464/"
-                  target="_blank"
-                >
-                  <div class="inner-box center">
-                    <p class="caja">Facebook</p>
-                  </div>
-                </a>
+    <footer>
+      <div id="footer" class="container">
+        <div class="row py-2">
+          <div id="nosotros" class="col-xs-12 col-md-5">
+            <div class="row">
+              <p class="nosotros static">Síguenos:</p>
+            </div>
+            <div class="row">
+              <div class="main center">
+                <div class="box">
+                  <a
+                    class="icon-box center"
+                    href="https://www.instagram.com/barespanapuebla/"
+                    target="_blank"
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/barespanapuebla/"
+                    target="_blank"
+                  >
+                    <div class="inner-box center">
+                      <p class="caja">Instagram</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="box">
+                  <a
+                    class="icon-box center ib-f"
+                    href="https://www.facebook.com/pages/category/BarCafe-Bar-Espa%C3%B1a-Puebla-809729442528464/"
+                    target="_blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/pages/category/BarCafe-Bar-Espa%C3%B1a-Puebla-809729442528464/"
+                    target="_blank"
+                  >
+                    <div class="inner-box center">
+                      <p class="caja">Facebook</p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
+            <div class="row">
+              <a
+                class="nosotros"
+                href="javascript:void(0)"
+                onclick="conocenos()"
+              >
+                <p class="nosotros">Conócenos</p>
+              </a>
+            </div>
           </div>
-          <div class="row">
-            <a
-              class="nosotros"
-              href="javascript:void(0)"
-              onclick="conocenos()"
-            >
-              <p class="nosotros">Conócenos</p>
-            </a>
+          <div class="col-xs-0 col-md-2"></div>
+          <div id="datos" class="col-xs-12 col-md-5">
+            <p class="info static">Dirección:</p>
+            <p class="valor static">
+              C/Arrabal, 33, 49300 - Puebla de Sanabria
+            </p>
+            <p class="info static">Teléfono:</p>
+            <p class="valor static">980620554</p>
           </div>
-        </div>
-        <div class="col-xs-0 col-md-2"></div>
-        <div id="datos" class="col-xs-12 col-md-5">
-          <p class="info static">Dirección:</p>
-          <p class="valor static">
-            C/Arrabal, 33, 49300 - Puebla de Sanabria
-          </p>
-          <p class="info static">Teléfono:</p>
-          <p class="valor static">980620554</p>
         </div>
       </div>
     </footer>
