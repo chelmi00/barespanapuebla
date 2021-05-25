@@ -31,9 +31,9 @@
         /*--boton-hover: #eeeeee;*/
         --boton-navbar-hover: #111111;
         /*--fondo-body-1: #637883;*/
-        --fondo-carousel-header: #637883;
+        --fondo-carousel-header: #454545/*#637883*/;
         /*--mapa-container: #4682b4;*/
-        --fondo-mapa: #4682b4;
+        --fondo-mapa: #282828;
     }
     .noche { opacity: 100%; }
     .dia { opacity: 0; }
