@@ -29,91 +29,93 @@
 
     <nav class="navbar navbar-expand-md navbar-dark py-0 fixed-top">
         <div class="home">
-          <div class="nav-logo mx-0 mx-sm-2 my-0">
-            <a onclick="inicio()" href="javascript:void(0)" class="home">
-              <img src="img/logo_dia.png" class="dia img-logo" />
-              <img src="img/logo_noche.png" class="noche img-logo" />
-            </a>
-          </div>
+            <div class="nav-logo mx-0 mx-sm-2 my-0">
+                <a onclick="inicio()" href="javascript:void(0)" class="home">
+                <img src="img/logo_dia.png" class="dia img-logo" />
+                <img src="img/logo_noche.png" class="noche img-logo" />
+                </a>
+            </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Sugerencias</h2>
-            </div>
-            <div class="col-md-4"></div>
-            <div class="hidden-xs hidden-sm col-md-4">
-                <a href="javascript:void(0)" onclick="conocenos()"><h2>Conócenos</h2></a>
+    <main class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Sugerencias</h2>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="d-sm-none d-md-block col-md-4">
+                    <a href="javascript:void(0)" onclick="conocenos()"><h2>Conócenos</h2></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="sug">
-        <p>A pe&shy;sar de siem&shy;pre ha&shy;cer&shy;lo lo me&shy;jor po&shy;si&shy;ble, es&shy;ta&shy;mos
-            dis&shy;pues&shy;tos a me&shy;jo&shy;rar. Por ello, tie&shy;ne la op&shy;ción de de&shy;jar&shy;nos
-            al&shy;gu&shy;na re&shy;co&shy;men&shy;da&shy;ción o su&shy;ge&shy;ren&shy;cia, re&shy;lle&shy;nan&shy;do el si&shy;guien&shy;te
-            for&shy;mu&shy;la&shy;rio.</p>
-    </div>
+        <div class="sug">
+            <p>A pe&shy;sar de siem&shy;pre ha&shy;cer&shy;lo lo me&shy;jor po&shy;si&shy;ble, es&shy;ta&shy;mos
+                dis&shy;pues&shy;tos a me&shy;jo&shy;rar. Por ello, tie&shy;ne la op&shy;ción de de&shy;jar&shy;nos
+                al&shy;gu&shy;na re&shy;co&shy;men&shy;da&shy;ción o su&shy;ge&shy;ren&shy;cia, re&shy;lle&shy;nan&shy;do el si&shy;guien&shy;te
+                for&shy;mu&shy;la&shy;rio.</p>
+        </div>
 
-    <form id="myform" method="GET" action="sugerencias.php">
-        <fieldset>
-            <div class="row">
-                <div class="col-xs-12 col-md-5">
-                    <div class="col-xs-3 col-md-2">
-                        <label>Nombre</label>
+        <form id="myform" method="GET" action="javascript:" onsubmit="enviar()">
+            <fieldset>
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <div class="col-xs-3 col-md-2">
+                            <label>Nombre</label>
+                        </div>
+                        <div class="col-xs-9">
+                            <input type="text" name="nombre" placeholder="Introduzca su nombre" required>
+                        </div>
                     </div>
-                    <div class="col-xs-9">
-                        <input type="text" name="nombre" placeholder="Introduzca su nombre" required>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-2"></div>
-                <div class="col-xs-12 col-md-5">
-                    <div class="col-xs-3 col-md-2">
-                        <label>Apellidos</label>
-                    </div>
-                    <div class="col-xs-9">
-                        <input type="text" name="apellidos" placeholder="Introduzca sus apellidos" required>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-5">
-                    <div class="col-xs-3 col-md-2">
-                        <label>Teléfono</label>
-                    </div>
-                    <div class="col-xs-9">
-                        <input type="tel" name="numero" placeholder="Introduzca su número de teléfono" required>
+                    <div class="col-xs-12 col-md-2"></div>
+                    <div class="col-xs-12 col-md-5">
+                        <div class="col-xs-3 col-md-2">
+                            <label>Apellidos</label>
+                        </div>
+                        <div class="col-xs-9">
+                            <input type="text" name="apellidos" placeholder="Introduzca sus apellidos" required>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-2"></div>
-                <div class="col-xs-12 col-md-5">
-                    <div class="col-xs-3 col-md-2">
-                        <label>Email</label>
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <div class="col-xs-3 col-md-2">
+                            <label>Teléfono</label>
+                        </div>
+                        <div class="col-xs-9">
+                            <input type="tel" name="numero" placeholder="Introduzca su número de teléfono" required>
+                        </div>
                     </div>
-                    <div class="col-xs-9">
-                        <input type="email" name="email" placeholder="Introduzca su correo electrónico" required>
+                    <div class="col-xs-12 col-md-2"></div>
+                    <div class="col-xs-12 col-md-5">
+                        <div class="col-xs-3 col-md-2">
+                            <label>Email</label>
+                        </div>
+                        <div class="col-xs-9">
+                            <input type="email" name="email" placeholder="Introduzca su correo electrónico" required>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>
-                        <textarea rows="4" name="suge" placeholder="Escriba su sugerencia" size="15px" required></textarea>
-                    </p>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>
+                            <textarea rows="4" name="suge" placeholder="Escriba su sugerencia" size="15px" required></textarea>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="row" id="sub">
-                <div class="col-xs-6" href="">
-                    <input type="submit" value="Enviar" id="envio">
+                <div class="row" id="sub">
+                    <div class="col-xs-6" href="">
+                        <input type="submit" value="Enviar" id="envio">
+                    </div>
+                    <div class="col-xs-6" href="">
+                        <input type="reset" value="Restablecer">
+                    </div>
                 </div>
-                <div class="col-xs-6" href="">
-                    <input type="reset" value="Restablecer">
-                </div>
-            </div>
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
+    </main>
 
     <footer>
         <div id="footer" class="container">

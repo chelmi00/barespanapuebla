@@ -3,7 +3,7 @@ function inicio() {
     let act = window.location.href;
     let a = document.referrer;
     let n = sessionStorage.getItem("n");
-    if (act.includes("sugerencias.php") || act.includes("carta.html")){
+    if (act.includes("sugerencias.html") || act.includes("carta.html")){
         if (a.includes("index.html"))
             window.history.go(-1);
         else
@@ -28,19 +28,19 @@ function carta() {
 function sugerencias() {
     aIndex();
     subir();
-    window.location="sugerencias.php";
+    window.location="sugerencias.html";
 }
 
 function conocenos() {
     let act = window.location.href;
     let a = document.referrer;
-    if (!(act.includes("sugerencias.php") || act.includes("carta.html")))
+    if (!(act.includes("sugerencias.html") || act.includes("carta.html")))
         aIndex();
-    if ((act.includes("sugerencias.php") || act.includes("carta.html")) && !a.includes("index.html")){
+    if ((act.includes("sugerencias.html") || act.includes("carta.html")) && !a.includes("index.html")){
         sessionStorage.setItem("n", 'error');
         history.replaceState(null, "", "index.html");
     }
-    if ((act.includes("sugerencias.php") || act.includes("carta.html")) && a.includes("index.html"))
+    if ((act.includes("sugerencias.html") || act.includes("carta.html")) && a.includes("index.html"))
         sessionStorage.setItem("n", 'ok');
     subir();
     window.location="conocenos.html";
