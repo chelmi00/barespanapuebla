@@ -12,6 +12,7 @@
         --fondo-carousel-header: #325b70;
         /*--mapa-container: #4682b4;*/
         --fondo-mapa: #4682b4;
+        --input: #ffffff;
     }
     .noche { opacity: 0; }
     .dia { opacity: 100%; }
@@ -34,6 +35,7 @@
         --fondo-carousel-header: #454545/*#637883*/;
         /*--mapa-container: #4682b4;*/
         --fondo-mapa: #282828;
+        --input: #454545;
     }
     .noche { opacity: 100%; }
     .dia { opacity: 0; }
@@ -41,6 +43,14 @@
     .home :hover .noche { opacity: 0; }
 
     .navbar-toggler-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;}
+}
+
+a[onclick^=conocenos] {
+    color: var(--conocenos);
+    text-decoration: none;
+}
+a[onclick^=conocenos] :hover {
+    color: var(--hover-footer);
 }
 
 .btn-primary {
@@ -133,6 +143,14 @@
 .container {
     padding: 0;
 }
+@media (min-width: 768px){
+    .dere, .izq {
+        width: 100%;
+    }
+    .dere, .dere label {
+        text-align: right;
+    }
+}
 
 .dia {
     position: relative !important;
@@ -157,10 +175,23 @@ html, body {
     height: 100%;
 }
 
+input, textarea {
+    background-color: var(--input);
+}
+#sub input:hover {
+    background-color: transparent;
+    color: var(--hover-footer);
+    border-color: transparent;
+}
+
 @media(prefers-color-scheme: dark) {
     img[src="header/inicio.jpg"], img[src="img/carta.jpg"] {
         filter: brightness(0.8);
     }
+}
+
+.letra {
+    color: var(--nyb);
 }
 
 #mapa-container {
@@ -188,6 +219,20 @@ html, body {
     left: 0;
 }
 
+#myform {
+    margin: 25px 0;
+}
+#myform input, #myform textarea {
+    width: 100%;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+fieldset p {
+    margin: 1rem 0;
+}
+
 .sep {
     margin: 25px auto;
     color: var(--nyb);
@@ -204,4 +249,10 @@ html, body {
 }
 .sep a:hover {
     color: var(--hover-footer);
+}
+
+@media (max-width: 768px){
+    .sugerencias .container :not(#footer) {
+        text-align: center;
+    }
 }
