@@ -18,6 +18,7 @@
     <link href="baresp.css" rel="stylesheet" />
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
+    <link href="popup.css" rel="stylesheet" />
 
     <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="baresp.js"></script>
@@ -66,7 +67,7 @@
                             <label>Nombre</label>
                         </div>
                         <div class="col-12">
-                            <input type="text" name="nombre" placeholder="Introduzca su nombre" required>
+                            <input type="text" name="nombre" placeholder="Introduzca su nombre" >
                         </div>
                     </div>
                     <div class="col-12 col-md-2"></div>
@@ -75,7 +76,7 @@
                             <label>Apellidos</label>
                         </div>
                         <div class="col-12">
-                            <input type="text" name="apellidos" placeholder="Introduzca sus apellidos" required>
+                            <input type="text" name="apellidos" placeholder="Introduzca sus apellidos" >
                         </div>
                     </div>
                 </div>
@@ -85,7 +86,7 @@
                             <label>Teléfono</label>
                         </div>
                         <div class="col-12">
-                            <input type="tel" name="numero" placeholder="Introduzca su número de teléfono" required>
+                            <input type="tel" name="numero" placeholder="Introduzca su número de teléfono" >
                         </div>
                     </div>
                     <div class="col-12 col-md-2"></div>
@@ -94,14 +95,14 @@
                             <label>Email</label>
                         </div>
                         <div class="col-12">
-                            <input type="email" name="email" placeholder="Introduzca su correo electrónico" required>
+                            <input type="email" name="email" placeholder="Introduzca su correo electrónico" >
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <p>
-                            <textarea rows="4" name="suge" placeholder="Escriba su sugerencia" size="15px" required></textarea>
+                            <textarea rows="4" name="suge" placeholder="Escriba su sugerencia" size="15px" ></textarea>
                         </p>
                     </div>
                 </div>
@@ -180,6 +181,23 @@
         </div>
         </div>
     </footer>
+
+    <div id="popup" class="modal">
+        <div class="modal-content container">
+            <span class="cerrar" onclick="volver()">&times;</span>
+            <div class="texto">
+                <h3>Enviado</h3>
+                <h3>Correctamente</h3>
+                <!--?php
+                    $nombre = $_REQUEST["nombre"];
+                    $apellidos = $_REQUEST["apellidos"];
+                    $numero = $_REQUEST["numero"];
+                    $email = $_REQUEST["email"];
+                    echo "<p>$nombre $apellidos</p>";
+                ?-->
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

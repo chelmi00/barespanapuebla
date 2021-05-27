@@ -1,0 +1,40 @@
+#popup{
+    background: linear-gradient(#000000b2, #000000b2);
+    display: block;
+}
+.modal-content{
+    color: var(--nyb);
+    background-color: var(--fondo-popup);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    bottom: auto;
+}
+.modal {
+    height: -webkit-fill-available;
+}
+.texto{
+    color: var(--nyb);
+    background-color: transparent;
+    text-align: center;
+    padding: 10% 0;
+}
+.texto h3{
+    color: var(--nyb);
+}
+.cerrar {
+    color: var(--nyb);
+    float: right;
+    position: absolute;
+    right: 15px;
+    height: 28px;
+    width: 28px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.cerrar:hover{
+    color: var(--byn);
+    text-decoration: none;
+    cursor: pointer;
+}

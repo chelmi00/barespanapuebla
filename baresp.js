@@ -66,6 +66,7 @@ function aIndex() {
 }
 
 function enviar() {
+    window.location="respuesta.html";
     const modal = document.getElementById("popup");
     const span = document.getElementsByClassName("cerrar")[0];
     modal.style.display = "block";
@@ -79,6 +80,25 @@ function enviar() {
         }
     }
 }
+
+function volver() {
+    if (!window.location.href.includes("respuesta.html"))
+        return;
+        
+    const modal = document.getElementById("popup");
+    const span = document.getElementsByClassName("cerrar")[0];
+
+    span.onclick = function () {
+        window.history.go(-1);
+    }
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            window.history.go(-1);
+        }
+    }
+}
+window.onclick = volver;
 
 function modifyHeight(){
     if (sessionStorage.getItem("a") === 'ok') {

@@ -13,6 +13,7 @@
         /*--mapa-container: #4682b4;*/
         --fondo-mapa: #4682b4;
         --input: #ffffff;
+        --fondo-popup: #f6f6f6;
     }
     .noche { opacity: 0; }
     .dia { opacity: 100%; }
@@ -36,6 +37,7 @@
         /*--mapa-container: #4682b4;*/
         --fondo-mapa: #282828;
         --input: #454545;
+        --fondo-popup: #565656;
     }
     .noche { opacity: 100%; }
     .dia { opacity: 0; }
