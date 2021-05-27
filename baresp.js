@@ -3,6 +3,11 @@ function inicio() {
     let act = window.location.href;
     let a = document.referrer;
     let n = sessionStorage.getItem("n");
+    let k = sessionStorage.getItem("k");
+    if (k === "ok"){
+        sessionStorage.setItem("k", 'notok');
+        window.history.go(-1);
+    }
     if (act.includes("sugerencias.html") || act.includes("carta.html")){
         if (a.includes("index.html"))
             window.history.go(-1);
@@ -31,7 +36,7 @@ function sugerencias() {
     window.location="sugerencias.html";
 }
 
-function conocenos() {
+function conocenos(){
     let act = window.location.href;
     let a = document.referrer;
     if (!(act.includes("sugerencias.html") || act.includes("carta.html")))
@@ -66,37 +71,15 @@ function aIndex() {
 }
 
 function enviar() {
+    sessionStorage.setItem("k", 'ok');
     window.location="respuesta.html";
-    const modal = document.getElementById("popup");
-    const span = document.getElementsByClassName("cerrar")[0];
-    modal.style.display = "block";
-
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    }
 }
 
 function volver() {
     if (!window.location.href.includes("respuesta.html"))
         return;
-        
-    const modal = document.getElementById("popup");
-    const span = document.getElementsByClassName("cerrar")[0];
 
-    span.onclick = function () {
-        window.history.go(-1);
-    }
-
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            window.history.go(-1);
-        }
-    }
+    window.history.go(-1);
 }
 window.onclick = volver;
 
