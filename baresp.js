@@ -98,4 +98,4 @@ function modifyHeight(){
     window.location.reload();
 }
 window.onresize = modifyHeight;
-window.onload = modifyHeight;
+// window.onload = modifyHeight;
