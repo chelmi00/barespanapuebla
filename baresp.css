@@ -179,7 +179,7 @@ input, textarea {
 }
 
 @media(prefers-color-scheme: dark) {
-    img[src="header/inicio.jpg"], img[src="img/carta.jpg"] {
+    img[src="src/carousel/inicio.jpg"], img[src="src/carousel/carta.jpg"] {
         filter: brightness(0.8);
     }
 }

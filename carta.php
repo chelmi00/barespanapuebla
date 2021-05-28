@@ -22,7 +22,7 @@
     <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="baresp.js"></script>
 
-    <link href="img/icon.png" rel="icon" style="object-fit: scale-down" />
+    <link href="src/icon.png" rel="icon" style="object-fit: scale-down" />
 </head>
 
 <body data-spy="scroll">
@@ -32,8 +32,8 @@
         <div class="home">
           <div class="nav-logo mx-0 mx-sm-2 my-0">
             <a onclick="inicio()" href="javascript:void(0)" class="home">
-              <img src="img/logo_dia.png" class="dia img-logo" />
-              <img src="img/logo_noche.png" class="noche img-logo" />
+              <img src="src/logo_dia.png" class="dia img-logo" />
+              <img src="src/logo_noche.png" class="noche img-logo" />
             </a>
           </div>
         </div>
@@ -43,13 +43,13 @@
 
         <div class="carta">
             <div class="container">
-                <img class="container sep" src="img/carta.jpg">
+                <img class="container sep" src="src/carta.jpg">
             </div>
         </div>
 
         <div>
             <div class="container sep">
-                <h2>También puede encontrar <a href="pdf/carta.pdf" target="_blank">nuestra carta</a> en formato PDF</h2>
+                <h2>También puede encontrar <a href="src/carta.pdf" target="_blank">nuestra carta</a> en formato PDF</h2>
 
                 <div class="takeaway">
                     <h2>Take Away</h2>

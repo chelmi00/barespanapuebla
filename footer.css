@@ -88,7 +88,7 @@ a.nosotros :hover {
     margin-top: 2%;
     width: 80%;
     height: 80%;
-    background: var(--fondo-footer) url("img/ig.png") no-repeat;
+    background: var(--fondo-footer) url("src/ig.png") no-repeat;
     background-size: contain;
     border-radius: 10px;
     cursor: pointer;
@@ -102,6 +102,6 @@ a.nosotros :hover {
     z-index: 0;
 }
 .ib-f{
-    background: var(--fondo-footer) url("img/fb.png") no-repeat;
+    background: var(--fondo-footer) url("src/fb.png") no-repeat;
     background-size: contain;
 }

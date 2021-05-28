@@ -23,15 +23,15 @@
     <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="baresp.js"></script>
 
-    <link href="img/icon.png" rel="icon" style="object-fit: scale-down" />
+    <link href="src/icon.png" rel="icon" style="object-fit: scale-down" />
   </head>
   <body data-spy="scroll">
     <nav class="navbar navbar-expand-md navbar-dark py-0 fixed-top">
       <div class="home">
         <div class="nav-logo mx-0 mx-sm-2 my-0">
           <a onclick="refresh()" href="" class="home">
-            <img src="img/logo_dia.png" class="dia img-logo" />
-            <img src="img/logo_noche.png" class="noche img-logo" />
+            <img src="src/logo_dia.png" class="dia img-logo" />
+            <img src="src/logo_noche.png" class="noche img-logo" />
           </a>
         </div>
       </div>
@@ -81,10 +81,10 @@
         </div>
         <div class="carousel-inner container">
           <div class="carousel-item active">
-            <img src="header/inicio.jpg" class="d-block w-100 inicio" />
+            <img src="src/carousel/inicio.jpg" class="d-block w-100 inicio" />
           </div>
           <div class="carousel-item">
-            <img src="header/carta.jpg" class="d-block w-100 inicio" />
+            <img src="src/carousel/carta.jpg" class="d-block w-100 inicio" />
             <div class="container">
               <div class="carousel-caption text-end">
                 <h1></h1>
@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="header/sugerencias.jpg" class="d-block w-100 inicio" />
+            <img src="src/carousel/sugerencias.jpg" class="d-block w-100 inicio" />
             <div class="container">
               <div class="carousel-caption text-end">
                 <h1></h1>
@@ -104,7 +104,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="header/conocenos.jpg" class="d-block w-100 inicio" />
+            <img src="src/carousel/conocenos.jpg" class="d-block w-100 inicio" />
             <div class="container">
               <div class="carousel-caption text-end">
                 <h1></h1>
@@ -134,14 +134,14 @@
 
       <div id="mapa-container">
         <nav id="mapa" class="container">
-          <img src="img/dia.png" class="mapa dia" />
-          <img src="img/noche.png" class="mapa noche" />
+          <img src="src/dia.png" class="mapa dia" />
+          <img src="src/noche.png" class="mapa noche" />
           <a
             title="Abrir en Google Maps"
             href="https://www.google.es/maps/place/Caf%C3%A9-Bar+Espa%C3%B1a/@42.051764,-6.6334581,20.05z/data=!4m5!3m4!1s0xd3a1625099608c1:0x6cc8bb5e3a6df825!8m2!3d42.0516234!4d-6.6335166"
             target="_blank"
           >
-            <img src="img/ampliar.png" />
+            <img src="src/ampliar.png" />
           </a>
         </nav>
       </div>

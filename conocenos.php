@@ -23,7 +23,7 @@
         <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="baresp.js"></script>
     
-        <link href="img/icon.png" rel="icon" style="object-fit: scale-down" />
+        <link href="src/icon.png" rel="icon" style="object-fit: scale-down" />
     </head>
 <body>
 
@@ -31,8 +31,8 @@
         <div class="home">
             <div class="nav-logo mx-0 mx-sm-2 my-0">
                 <a onclick="inicio()" href="javascript:void(0)" class="home">
-                <img src="img/logo_dia.png" class="dia img-logo" />
-                <img src="img/logo_noche.png" class="noche img-logo" />
+                <img src="src/logo_dia.png" class="dia img-logo" />
+                <img src="src/logo_noche.png" class="noche img-logo" />
                 </a>
             </div>
         </div>
@@ -42,9 +42,9 @@
         <div id="cuerpo_conocenos">
             <div id="tapa">
                 <div class="imagenes">
-                    <img src="img/tapas.jpg" id="tapas">
+                    <img src="src/tapas.jpg" id="tapas">
                     <p id="cuerpo2">Es&shy;ta&shy;mos or&shy;gu&shy;llo&shy;sos de po&shy;der de&shy;cir que he&shy;mos ga&shy;na&shy;do el pre&shy;mio a la ta&shy;pa del año en la co&shy;mar&shy;ca de Sa&shy;na&shy;bria. Es&shy;ta ha&shy;za&shy;ña la he&shy;mos al&shy;can&shy;za&shy;do en nu&shy;me&shy;ro&shy;sas oca&shy;sio&shy;nes, co&shy;mo en 2017.</p>
-                    <img src="img/tapitas.jpg" id="tapitas">
+                    <img src="src/tapitas.jpg" id="tapitas">
                 </div>
                 <div class="text">
                     <p id="cuerpo">Es&shy;ta&shy;mos or&shy;gu&shy;llo&shy;sos de po&shy;der de&shy;cir que he&shy;mos ga&shy;na&shy;do el pre&shy;mio a la ta&shy;pa del año en la co&shy;mar&shy;ca de Sa&shy;na&shy;bria. Es&shy;ta ha&shy;za&shy;ña la he&shy;mos al&shy;can&shy;za&shy;do en nu&shy;me&shy;ro&shy;sas oca&shy;sio&shy;nes, co&shy;mo en 2017.</p>
