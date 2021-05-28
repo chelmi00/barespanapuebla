@@ -1,3 +1,11 @@
+<?php
+    $nombre = $_REQUEST["nombre"];
+    $apellidos = $_REQUEST["apellidos"];
+    $numero = $_REQUEST["numero"];
+    $email = $_REQUEST["email"];
+    $suge = $_REQUEST["suge"];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -184,17 +192,15 @@
 
     <div id="popup" class="modal">
         <div class="modal-content container">
-            <span class="cerrar" onclick="volver()">&times;</span>
+            <span class="cerrar" onclick="">&times;</span>
             <div class="texto">
-                <h3>Enviado</h3>
-                <h3>Correctamente</h3>
-                <!--?php
-                    $nombre = $_REQUEST["nombre"];
-                    $apellidos = $_REQUEST["apellidos"];
-                    $numero = $_REQUEST["numero"];
-                    $email = $_REQUEST["email"];
-                    echo "<p>$nombre $apellidos</p>";
-                ?-->
+                <h3>Sugerencia Registrada</h3>
+                <?php
+                    echo "
+                        <p>$nombre $apellidos, cuyo número de teléfono es $numero y cuyo email es $email, sugiere:</p>
+                        <p>$suge</p>
+                    ";
+                ?>
             </div>
         </div>
     </div>

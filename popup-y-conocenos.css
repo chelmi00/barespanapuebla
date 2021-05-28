@@ -38,6 +38,9 @@
 .texto h3 {
     color: var(--nyb);
 }
+.texto p {
+    margin: 0;
+}
 
 
 /* Conocenos */
