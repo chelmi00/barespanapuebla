@@ -89,7 +89,7 @@
               <div class="carousel-caption text-end">
                 <h1></h1>
                 <p><span>¿Se atreve su paladar a experimentar nuevas sensaciones?</span></p>
-                <p><a class="btn btn-lg btn-primary" href="carta.html">Carta</a></p>
+                <p><a class="btn btn-lg btn-primary" href="carta.php">Carta</a></p>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
               <div class="carousel-caption text-end">
                 <h1></h1>
                 <p><span>¿Quiere saber un poquito sobre nosotros?</span></p>
-                <p><a class="btn btn-lg btn-primary" href="conocenos.html">Conocenos</a></p>
+                <p><a class="btn btn-lg btn-primary" href="conocenos.php">Conocenos</a></p>
               </div>
             </div>
           </div>
