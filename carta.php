@@ -1,3 +1,17 @@
+<?php
+    $dbhost = "localhost";
+    $dbuser = "id16790866_barespanapuebla";
+    $dbpass = "RELLENAR";
+    $dbname = "id16790866_carta";
+    try {
+        $db = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF-8'"));
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }catch(Exception $error) {
+        die("Error conexión BBDD " . $error->getMessage());
+    }
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

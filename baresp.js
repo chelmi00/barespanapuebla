@@ -84,18 +84,12 @@ function volver() {
 window.onclick = volver;
 
 function modifyHeight(){
-    if (sessionStorage.getItem("a") === 'ok') {
-        sessionStorage.setItem("a", 'notok');
+    if (!window.location.href.includes("index.php"))
         return;
-    }
-    var width = window.innerWidth;
-    if (width < 576){
-        var elem = document.getElementById("iframe").contentWindow.document.getElementById("body-carousel");
-        let height = "height: " + elem.offsetHeight +"px;";
-        document.getElementById("carousel-comida").setAttribute("style", height);
-    }
-    sessionStorage.setItem("a", 'ok');
-    window.location.reload();
+        
+    var elem = document.getElementById("iframe").contentWindow.document.getElementById("body-carousel");
+    let height = "height: " + elem.offsetHeight +"px;";
+    document.getElementById("carousel-comida").setAttribute("style", height);
 }
 window.onresize = modifyHeight;
-// window.onload = modifyHeight;
+window.onload = modifyHeight;
