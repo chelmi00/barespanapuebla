@@ -4,6 +4,24 @@
     $numero = $_REQUEST["numero"];
     $email = $_REQUEST["email"];
     $suge = $_REQUEST["suge"];
+
+    require_once "conexion.php";
+
+    $sql_insert = "INSERT INTO Sugerencias (nombre, apellidos, telefono, email, mensaje) " . " VALUES (:nombre, :apellidos, :telefono, :email, :mensaje)";
+
+    try {
+    $sentencia = $db->prepare($sql_insert);
+    $sentencia->execute(array(
+        'nombre' => $nombre,
+        'apellidos' => $apellidos,
+        'telefono' => $numero,
+        'email' => $email,
+        'mensaje' => $suge)
+    );
+        //echo "Insertado";
+    }catch(PDOException $error) {
+        die("Error a insertar " . $error->getMessage());
+    }
 ?>
 
 <!DOCTYPE html>

@@ -1,17 +1,3 @@
-<?php
-    $dbhost = "localhost";
-    $dbuser = "id16790866_barespanapuebla";
-    $dbpass = "RELLENAR";
-    $dbname = "id16790866_carta";
-    try {
-        $db = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF-8'"));
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }catch(Exception $error) {
-        die("Error conexión BBDD " . $error->getMessage());
-    }
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,6 +44,24 @@
         <div class="carta">
             <div class="container">
                 <img class="container sep" src="src/carta.jpg">
+
+                <?php
+                    require_once "conexion.php";
+                    $sql = "SELECT nombre, precio, tipo FROM Carta ORDER BY tipo";
+                    $tipoAnterior = "";
+                    foreach($db->query($sql) as $row){
+                        $nombre = $row['nombre'];
+                        $precio = $row['precio'];
+                        $tipo = $row['tipo'];
+
+                        if($tipoAnterior != $tipo)
+                            echo "<br><strong> $tipo </strong><br>";
+                        $tipoAnterior = $tipo;
+
+                        echo $nombre . " - " . $precio . "€<br>";
+                    }
+                ?>
+
             </div>
         </div>
 

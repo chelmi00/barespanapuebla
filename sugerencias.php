@@ -58,7 +58,7 @@
                 for&shy;mu&shy;la&shy;rio.</p>
         </div>
 
-        <form id="myform" class="letra" method="GET" action="respuesta.php">
+        <form id="myform" class="letra" method="POST" action="respuesta.php">
             <fieldset>
                 <div class="row">
                     <div class="col-12 col-md-5">
