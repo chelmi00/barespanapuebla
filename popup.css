@@ -8,12 +8,12 @@
     font-size: 28px;
     font-weight: bold;
 }
-.cerrar:hover{
+.cerrar:hover {
     color: var(--byn);
     text-decoration: none;
     cursor: pointer;
 }
-.modal-content{
+.modal-content {
     color: var(--nyb);
     background-color: var(--fondo-popup);
     border-radius: 10px;
@@ -25,51 +25,109 @@
 .modal {
     height: -webkit-fill-available;
 }
-#popup{
+#popup {
     background: linear-gradient(#000000b2, #000000b2);
     display: block;
 }
-.texto{
+.texto {
     color: var(--nyb);
     background-color: transparent;
     text-align: center;
     padding: 10% 0;
 }
-.texto h3{
+.texto h3 {
     color: var(--nyb);
 }
 
 
 /* Conocenos */
-#cuerpo_conocenos{
-    margin: 30px 0;
+#cuerpo_conocenos {
+    margin: 25px 0;
     color: var(--nyb);
 }
-#cuerpo_conocenos p{
-    visibility: hidden;
+#cuerpo {
     font-size: 20px;
-    margin: 0;
+    margin: 0 3%;
+}
+#cuerpo2 {
+    display: none;
+    font-size: 20px;
+    margin: auto 3%;
 }
 
-#tapas{
-    float: left;
+#tapas {
     height: 20rem;
     width: auto;
-    filter: blur(1px);
-}
-#tapitas{
-    position: relative;
-    top: 0;
-    right: 0;
-    float: right;
-    height: 20rem;
-    width: auto;
-    visibility: hidden;
-}
-#tapas:hover{
     filter: blur(0);
     filter: brightness(2.5);
 }
-#tapas:hover ~ p, #tapas:hover ~ img{
-    visibility: visible;
+#tapitas {
+    height: 20rem;
+    width: auto;
+}
+
+@media (max-width: 440px) {
+    .imagenes {
+        text-align: center;
+    }
+    #tapitas {
+        display: none;
+    }
+}
+@media (min-width: 440px) {
+    #tapa {
+        display: flex;
+        flex-direction: row;
+    }
+    .imagenes {
+        padding-left: 5%;
+        text-align: left;
+    }
+    #tapitas {
+        display: none;
+    }
+    .text {
+        text-align: right;
+    }
+    #cuerpo {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 500px){
+    #tapa {
+        display: block;
+    }
+    .imagenes {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+    #tapas {
+        text-align: left;
+        margin-right: auto;
+    }
+    #tapitas {
+        position: relative;
+        right: 0;
+        display: block;
+    }
+    .text {
+        text-align: left;
+    }
+    #cuerpo {
+        transform: none;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #cuerpo {
+        display: none;
+    }
+    #cuerpo2 {
+        display: block;
+    }
 }
