@@ -102,31 +102,6 @@ a[onclick^=conocenos] :hover {
     height: 450px;
     margin: 25px auto;
 }
-/*@media (min-width: 576px) {
-    .carousel-comida {
-        height: 450px;
-    }
-}
-@media (min-width: 768px) {
-    .carousel-comida {
-        height: 210px;
-    }
-}
-@media (min-width: 992px) {
-    .carousel-comida {
-        height: 190px;
-    }
-}
-@media (min-width: 1200px) {
-    .carousel-comida {
-        height: 195px;
-    }
-}
-@media (min-width: 1400px) {
-    .carousel-comida {
-        height: 240px;
-    }
-}*/
 
 .carousel-iframe {
     width: 100%;

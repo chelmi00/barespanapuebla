@@ -18,6 +18,7 @@
     <link href="baresp.css" rel="stylesheet" />
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
+    <link href="pop-conoc-php.css" rel="stylesheet" />
 
     <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="baresp.js"></script>
@@ -43,25 +44,23 @@
 
         <div class="carta">
             <div class="container">
-                <img class="container sep" src="src/carta.jpg">
-
                 <?php
                     require_once "conexion.php";
                     $sql = "SELECT nombre, precio, tipo FROM Carta ORDER BY tipo";
                     $tipoAnterior = "";
+                    echo "<h1>Nuestra Carta</h1>";
                     foreach($db->query($sql) as $row){
                         $nombre = $row['nombre'];
                         $precio = $row['precio'];
                         $tipo = $row['tipo'];
 
                         if($tipoAnterior != $tipo)
-                            echo "<br><strong> $tipo </strong><br>";
+                            echo "<h2> $tipo </h2>";
                         $tipoAnterior = $tipo;
 
-                        echo $nombre . " - " . $precio . "€<br>";
+                        echo "<p>$nombre - $precio €</p>";
                     }
                 ?>
-
             </div>
         </div>
 

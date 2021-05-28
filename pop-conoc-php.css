@@ -1,3 +1,4 @@
+/*Popup*/
 .cerrar {
     color: var(--nyb);
     float: right;
@@ -133,4 +134,28 @@
     #cuerpo2 {
         display: block;
     }
+}
+
+/*PHP*/
+.carta .container h1 {
+    text-align: center;
+    color: var(--nyb);
+    text-decoration: underline 2px var(--nyb);
+}
+.carta .container {
+    margin: auto auto 25px;
+    padding-bottom: 25px;
+}
+@media (max-width: 600px) {
+    .carta .container {
+        margin: auto 10%;
+    }
+}
+.carta .container p {
+    color: var(--nyb);
+    margin: 0;
+}
+.carta .container h2 {
+    color: var(--byn);
+    margin: 0;
 }
