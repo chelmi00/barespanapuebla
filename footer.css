@@ -48,9 +48,9 @@ p.nosotros {
     text-decoration: none;
 }
 p.caja {
-     font-size: 15px;
-     margin-bottom: 5px;
-     color: var(--hover-footer);
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: var(--hover-footer);
  }
 
 a.nosotros {

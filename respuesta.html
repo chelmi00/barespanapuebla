@@ -18,7 +18,7 @@
     <link href="baresp.css" rel="stylesheet" />
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
-    <link href="popup.css" rel="stylesheet" />
+    <link href="popup-y-conocenos.css" rel="stylesheet" />
 
     <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="baresp.js"></script>

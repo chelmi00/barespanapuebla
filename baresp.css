@@ -2,18 +2,14 @@
     :root{
         --byn: #ffffff;
         --nyb: #000000;
-        /*--hover: #000000;*/
         --ul-navbar-hover: #000000;
-        /*--fondo-body: #87ceeb80;*/
         --fondo-carousel-comida: #87ceeb80;
-        /*--boton-hover: #eeeeee;*/
         --boton-navbar-hover: #eeeeee;
-        /*--fondo-body-1: #325b70;*/
         --fondo-carousel-header: #325b70;
-        /*--mapa-container: #4682b4;*/
         --fondo-mapa: #4682b4;
         --input: #ffffff;
         --fondo-popup: #f6f6f6;
+        --submit-color: #bf9200;
     }
     .noche { opacity: 0; }
     .dia { opacity: 100%; }
@@ -26,18 +22,14 @@
     :root{
         --byn: #000000;
         --nyb: #ffffff;
-        /*--hover: #ffca18b5;*/
         --ul-navbar-hover: #ffca18b5;
-        /*--fondo-body: #87ceeb80;*/
         --fondo-carousel-comida: #1c1c1c;
-        /*--boton-hover: #eeeeee;*/
         --boton-navbar-hover: #111111;
-        /*--fondo-body-1: #637883;*/
-        --fondo-carousel-header: #454545/*#637883*/;
-        /*--mapa-container: #4682b4;*/
+        --fondo-carousel-header: #454545;
         --fondo-mapa: #282828;
         --input: #454545;
         --fondo-popup: #565656;
+        --submit-color: #d42a2a;
     }
     .noche { opacity: 100%; }
     .dia { opacity: 0; }
@@ -182,7 +174,7 @@ input, textarea {
 }
 #sub input:hover {
     background-color: transparent;
-    color: var(--hover-footer);
+    color: var(--submit-color);
     border-color: transparent;
 }
 

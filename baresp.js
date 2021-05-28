@@ -8,55 +8,55 @@ function inicio() {
         sessionStorage.setItem("k", 'notok');
         window.history.go(-1);
     }
-    if (act.includes("sugerencias.html") || act.includes("carta.html")){
-        if (a.includes("index.html"))
+    if (act.includes("sugerencias.php") || act.includes("carta.php")){
+        if (a.includes("index.php"))
             window.history.go(-1);
         else
-            window.location.replace("index.html");
+            window.location.replace("index.php");
     }
-    else if (act.includes("conocenos.html")){
-        if (a.includes("index.html") || n === "error")
+    else if (act.includes("conocenos.php")){
+        if (a.includes("index.php") || n === "error")
             window.history.go(-1);
         else if (n === "ok")
             window.history.go(-2);
         else
-            window.location.replace("index.html");
+            window.location.replace("index.php");
     }
 }
 
 function carta() {
     aIndex();
     subir();
-    window.location="carta.html";
+    window.location="carta.php";
 }
 
 function sugerencias() {
     aIndex();
     subir();
-    window.location="sugerencias.html";
+    window.location="sugerencias.php";
 }
 
 function conocenos(){
     let act = window.location.href;
     let a = document.referrer;
-    if (!(act.includes("sugerencias.html") || act.includes("carta.html")))
+    if (!(act.includes("sugerencias.php") || act.includes("carta.php")))
         aIndex();
-    if ((act.includes("sugerencias.html") || act.includes("carta.html")) && !a.includes("index.html")){
+    if ((act.includes("sugerencias.php") || act.includes("carta.php")) && !a.includes("index.php")){
         sessionStorage.setItem("n", 'error');
-        history.replaceState(null, "", "index.html");
+        history.replaceState(null, "", "index.php");
     }
-    if ((act.includes("sugerencias.html") || act.includes("carta.html")) && a.includes("index.html"))
+    if ((act.includes("sugerencias.php") || act.includes("carta.php")) && a.includes("index.php"))
         sessionStorage.setItem("n", 'ok');
     subir();
-    window.location="conocenos.html";
+    window.location="conocenos.php";
 }
 
 function refresh() {
     let act = window.location.href;
-    if (act.includes("index.html") || act.includes("conocenos.html"))
+    if (act.includes("index.php") || act.includes("conocenos.php"))
         window.location.reload();
     else
-        window.location.replace("index.html");
+        window.location.replace("index.php");
 }
 function subir() {
     window.scrollTo(0, 0);
@@ -64,19 +64,19 @@ function subir() {
 
 function aIndex() {
     let act = window.location.href;
-    if (act.includes("index.html"))
+    if (act.includes("index.php"))
         return;
     else
-        history.replaceState(null, "", act + "index.html");
+        history.replaceState(null, "", act + "index.php");
 }
 
 function enviar() {
     sessionStorage.setItem("k", 'ok');
-    window.location="respuesta.html";
+    window.location="respuesta.php";
 }
 
 function volver() {
-    if (!window.location.href.includes("respuesta.html"))
+    if (!window.location.href.includes("respuesta.php"))
         return;
 
     window.history.go(-1);
