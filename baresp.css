@@ -102,7 +102,7 @@ a[onclick^=conocenos] :hover {
     height: 450px;
     margin: 25px auto;
 }
-@media (min-width: 576px) {
+/*@media (min-width: 576px) {
     .carousel-comida {
         height: 450px;
     }
@@ -126,7 +126,7 @@ a[onclick^=conocenos] :hover {
     .carousel-comida {
         height: 240px;
     }
-}
+}*/
 
 .carousel-iframe {
     width: 100%;
