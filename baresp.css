@@ -220,25 +220,6 @@ fieldset p {
     color: var(--hover-footer);
 }
 
-.ib-f{
-    background: var(--principal) url("img/fb.png") no-repeat;
-    background-size: contain;
-}
-.box:hover .icon-box{
-    transform: translateY(-30px);
-}
-.inner-box{
-    background: var(--principal);
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 0;
-    color: var(--nhf);
-}
-.inner-box p{
-    font-size: 15px;
-    margin-bottom: 5px;
-}
-
 @media (max-width: 768px){
     .sugerencias .container:not(#footer) {
         text-align: center;
