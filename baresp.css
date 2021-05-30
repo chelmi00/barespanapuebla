@@ -255,6 +255,7 @@ footer{
     z-index: 1;
 }
 
+<<<<<<< Updated upstream
 .ib-f{
     background: var(--principal) url("img/fb.png") no-repeat;
     background-size: contain;
@@ -272,4 +273,14 @@ footer{
 .inner-box p{
     font-size: 15px;
     margin-bottom: 5px;
+=======
+@media (max-width: 768px){
+    .sugerencias .container :not(#footer) {
+        text-align: center;
+    }
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+>>>>>>> Stashed changes
 }
