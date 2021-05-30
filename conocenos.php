@@ -97,8 +97,8 @@
             <div class="row">
                 <a
                 class="nosotros"
-                href="javascript:void(0)"
-                onclick="conocenos()"
+                href=""
+                onclick="refresh()"
                 >
                 <p class="nosotros">Conócenos</p>
                 </a>
