@@ -1,81 +1,95 @@
-function inicio(){
+function inicio() {
 
     let act = window.location.href;
     let a = document.referrer;
     let n = sessionStorage.getItem("n");
-    if (act.includes("sugerencias.html") || act.includes("carta.html")){
-        if (a.includes("index.html"))
+    let k = sessionStorage.getItem("k");
+    if (k === "ok"){
+        sessionStorage.setItem("k", 'notok');
+        window.history.go(-1);
+    }
+    if (act.includes("sugerencias.php") || act.includes("carta.php")){
+        if (a.includes("index.php"))
             window.history.go(-1);
         else
-            window.location.replace("index.html");
+            window.location.replace("index.php");
     }
-    else if (act.includes("conocenos.html")){
-        if (a.includes("index.html") || n === "error")
+    else if (act.includes("conocenos.php")){
+        if (a.includes("index.php") || n === "error")
             window.history.go(-1);
         else if (n === "ok")
             window.history.go(-2);
         else
-            window.location.replace("index.html");
+            window.location.replace("index.php");
     }
 }
 
-function carta(){
+function carta() {
     aIndex();
     subir();
-    window.location="carta.html";
+    window.location="carta.php";
 }
 
-function sugerencias(){
+function sugerencias() {
     aIndex();
     subir();
-    window.location="sugerencias.html";
+    window.location="sugerencias.php";
 }
 
 function conocenos(){
     let act = window.location.href;
     let a = document.referrer;
-    if (!(act.includes("sugerencias.html") || act.includes("carta.html")))
+    if (!(act.includes("sugerencias.php") || act.includes("carta.php")))
         aIndex();
-    if ((act.includes("sugerencias.html") || act.includes("carta.html")) && !a.includes("index.html")){
+    if ((act.includes("sugerencias.php") || act.includes("carta.php")) && !a.includes("index.php")){
         sessionStorage.setItem("n", 'error');
-        history.replaceState(null, "", "index.html");
+        history.replaceState(null, "", "index.php");
     }
-    if ((act.includes("sugerencias.html") || act.includes("carta.html")) && a.includes("index.html"))
+    if ((act.includes("sugerencias.php") || act.includes("carta.php")) && a.includes("index.php"))
         sessionStorage.setItem("n", 'ok');
     subir();
-    window.location="conocenos.html";
+    window.location="conocenos.php";
 }
 
-function refresh(){
+function refresh() {
     let act = window.location.href;
-    if (act.includes("index.html") || act.includes("conocenos.html"))
+    if (act.includes("index.php") || act.includes("conocenos.php"))
         window.location.reload();
     else
-        window.location.replace("index.html");
+        window.location.replace("index.php");
 }
-function subir(){
+function subir() {
     window.scrollTo(0, 0);
 }
 
-function aIndex(){
+function aIndex() {
     let act = window.location.href;
-    if (act.includes("index.html"))
+    if (act.includes("index.php"))
         return;
     else
-        history.replaceState(null, "", act + "index.html");
+        history.replaceState(null, "", act + "index.php");
 }
 
-function enviar(){
-    const modal = document.getElementById("popup");
-    const span = document.getElementsByClassName("cerrar")[0];
-    modal.style.display = "block";
-
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    }
+function enviar() {
+    sessionStorage.setItem("k", 'ok');
+    window.location="respuesta.php";
 }
+
+function volver() {
+    if (!window.location.href.includes("respuesta.php"))
+        return;
+
+    window.history.go(-1);
+}
+window.onclick = volver;
+
+function modifyHeight(){
+    if (!window.location.href.includes("index.php"))
+        return;
+        
+    var elem = document.getElementById("iframe").contentWindow.document.getElementById("body-carousel");
+    let height = "height: " + elem.offsetHeight +"px;";
+    document.getElementById("carousel-comida").setAttribute("style", height);
+}
+window.onresize = modifyHeight;
+window.onload = modifyHeight;

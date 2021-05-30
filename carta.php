@@ -142,5 +142,6 @@
         </div>
         </div>
     </footer>
+    <h3>Nota: Esta sección sigue en desarrollo</h3>
 </body>
 </html>
