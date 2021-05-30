@@ -240,7 +240,7 @@ fieldset p {
 }
 
 @media (max-width: 768px){
-    .sugerencias .container :not(#footer) {
+    .sugerencias .container:not(#footer) {
         text-align: center;
     }
 }
