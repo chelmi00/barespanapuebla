@@ -8,13 +8,13 @@ function inicio() {
         sessionStorage.setItem("k", 'notok');
         window.history.go(-1);
     }
-    if (act.includes("sugerencias.php") || act.includes("carta.php")){
+    if (act.includes("sugerencias.html") || act.includes("carta.html")){
         if (a.includes("index.html"))
             window.history.go(-1);
         else
             window.location.replace("index.html");
     }
-    else if (act.includes("conocenos.php")){
+    else if (act.includes("conocenos.html")){
         if (a.includes("index.html") || n === "error")
             window.history.go(-1);
         else if (n === "ok")
@@ -27,33 +27,33 @@ function inicio() {
 function carta() {
     aIndex();
     subir();
-    window.location="carta.php";
+    window.location="carta.html";
 }
 
 function sugerencias() {
     aIndex();
     subir();
-    window.location="sugerencias.php";
+    window.location="sugerencias.html";
 }
 
 function conocenos(){
     let act = window.location.href;
     let a = document.referrer;
-    if (!(act.includes("sugerencias.php") || act.includes("carta.php")))
+    if (!(act.includes("sugerencias.html") || act.includes("carta.html")))
         aIndex();
-    if ((act.includes("sugerencias.php") || act.includes("carta.php")) && !a.includes("index.html")){
+    if ((act.includes("sugerencias.html") || act.includes("carta.html")) && !a.includes("index.html")){
         sessionStorage.setItem("n", 'error');
         history.replaceState(null, "", "index.html");
     }
-    if ((act.includes("sugerencias.php") || act.includes("carta.php")) && a.includes("index.html"))
+    if ((act.includes("sugerencias.html") || act.includes("carta.html")) && a.includes("index.html"))
         sessionStorage.setItem("n", 'ok');
     subir();
-    window.location="conocenos.php";
+    window.location="conocenos.html";
 }
 
 function refresh() {
     let act = window.location.href;
-    if (act.includes("index.html") || act.includes("conocenos.php"))
+    if (act.includes("index.html") || act.includes("conocenos.html"))
         window.location.reload();
     else
         window.location.replace("index.html");
@@ -72,11 +72,11 @@ function aIndex() {
 
 function enviar() {
     sessionStorage.setItem("k", 'ok');
-    window.location="respuesta.php";
+    window.location="respuesta.html";
 }
 
 function volver() {
-    if (!window.location.href.includes("respuesta.php"))
+    if (!window.location.href.includes("respuesta.html"))
         return;
 
     window.history.go(-1);
