@@ -18,13 +18,13 @@
         visibility: visible;
     }
 }
-  
+
 @media (min-width: 576px) {
-      
+
     .carousel-item {
         margin-right: 0;
     }
-  
+
     .carousel-inner .active + .carousel-item {
         display: block;
     }
@@ -35,8 +35,8 @@
     }
 
     .carousel-inner .carousel-item-next {
-      position: relative;
-      transform: translate3d(0, 0, 0);
+        position: relative;
+        transform: translate3d(0, 0, 0);
     }
     
     .active.carousel-item-left + .carousel-item-next.carousel-item-left,
@@ -69,17 +69,17 @@
 
 @media (min-width: 768px) {
 
-  .carousel-inner .active + .carousel-item + .carousel-item {
+    .carousel-inner .active + .carousel-item + .carousel-item {
         display: block;
     }
- 
+
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
         transition: none;
     }
     
     .carousel-inner .carousel-item-next {
-      position: relative;
-      transform: translate3d(0, 0, 0);
+        position: relative;
+        transform: translate3d(0, 0, 0);
     }
     
     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {

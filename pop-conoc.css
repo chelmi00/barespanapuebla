@@ -57,6 +57,7 @@
     display: none;
     font-size: 20px;
     margin: auto 3%;
+    content-visibility: hidden;
 }
 
 #tapas {
@@ -68,6 +69,7 @@
 #tapitas {
     height: 20rem;
     width: auto;
+    content-visibility: hidden;
 }
 
 @media (max-width: 440px) {
@@ -117,6 +119,7 @@
         position: relative;
         right: 0;
         display: block;
+        content-visibility: visible;
     }
     .text {
         text-align: left;
@@ -134,29 +137,11 @@
     #cuerpo2 {
         display: block;
     }
-}
-
-/*PHP*/
-.carta .container h1 {
-    text-align: center;
-    color: var(--nyb);
-    text-decoration: underline 2px var(--nyb);
-}
-.carta .container {
-    margin: auto auto 25px;
-    padding-bottom: 25px;
-}
-@media (max-width: 600px) {
-    .carta .container {
-        margin: auto 10%;
-        width: auto;
+    #tapitas {
+        content-visibility: hidden;
     }
 }
-.carta .container p {
-    color: var(--nyb);
-    margin: 0;
-}
-.carta .container h2 {
-    color: var(--byn);
-    margin: 0;
+
+#tapas:hover ~ #cuerpo2 , #tapas:hover ~ #tapitas {
+    content-visibility: visible;
 }

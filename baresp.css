@@ -121,6 +121,10 @@ a[onclick^=conocenos] :hover {
     }
 }
 
+#carta {
+    margin-top: 25px;
+}
+
 .dia {
     position: relative !important;
 }
