@@ -69,6 +69,10 @@
 
 @media (min-width: 768px) {
 
+    #body-carousel {
+        height: 210px;
+    }
+
     .carousel-inner .active + .carousel-item + .carousel-item {
         display: block;
     }
@@ -100,6 +104,10 @@
 
 @media (min-width: 992px) {
 
+    #body-carousel {
+        height: 190px;
+    }
+
     .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
         display: block;
     }
@@ -129,6 +137,13 @@
         visibility: visible;
         display: block;
         visibility: visible;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #body-carousel {
+        height: 195px;
     }
 }
 
